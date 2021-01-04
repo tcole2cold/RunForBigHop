@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Run for Big Hop</title>
+  <meta name="description" content="Run for Big Hop">
+  <meta name="author" content="Tanner Cole">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+
+  <div id="load-in-content" class="hidden"></div>
+
+  <div id="video-box" class="hidden">
+
+    <video width="100%" height="100%" autoplay muted loop playsInLine>
+      <source playsInLine src="landing-video.mp4" type="video/mp4">
+    </video>
+
+    <div id="header-bar">
+      <h1><p class="header-text" id="white-head">Run For Big Hop</p></h1>
+      <h1><p class="header-text orange" id="orange-head">Run For Big Hop</p</h1>
+    </div>
+
+  </div>
+
+  <div id="text-bar">
+    <h1>Forget calories. Find out how many beers you burned.</h1>
+  </div>
+
+  <div id="explainer-box">
+    <div id="map-box">
+      <p>Your <span class="orange">Strava</span> activity.</p>
+      <img src="staticMap.png">
+    </div>
+    <div id="equality-box">
+      <p id="equal">=</p>
+    </div>
+    <div id="hop-box">
+      <img src="bighop.png">
+    </div>
+  </div>
+
+  <div id="btn-holder">
+    <a href="https://www.strava.com/oauth/authorize?client_id=50740&response_type=code&redirect_uri=http://www.runforbighop.com&approval_prompt=force&scope=activity:read_all" class="startBtn">Click to authorize Strava and get started.</a>
+  </div>
+
+<div id="foot-holder">
+  <div class="foot-box">
+    <h2>Help! It isn't working!</h2>
+    <p>This tool only works if calorie data is included in your Strava tracking. In order to enable calorie metrics, you usually just need to tell Strava how much you weigh in your account settings. Sorry about that.</p>
+    <br>
+    <p>If other issues persist, tell me via <a href="mailto:tannerleecole@gmail.com">my gmail.</a></p>
+  </div>
+  <div class="foot-box">
+    <h2>About this project.</h2>
+    <p>Consider this a fan project by a web developer who has both an unhealthy love of Pittsburgh's East End Brewing Company's Big Hop and a healthy love of running and cycling. <a href="https://www.linkedin.com/in/tanner-cole/">Connect with the creator on LinkedIn!</a></p>
+    <br>
+    <p>The app uses data from each of your latest recorded activities and determines about how many 12 oz. Big Hops worth of calories you burned.</p>
+    <br>
+    <p>It's using a 174 calorie estimate I found somewhere online . . . if one of the brewers would like to correct me on that, please do!</p>
+  </div>
+</div>  
+
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
